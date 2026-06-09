@@ -9,6 +9,26 @@ public class Cleric {
     int hp = MAX_HP;
     int mp = MAX_MP;
 
+    //이름,hp,mp 인스턴트화
+    public Cleric(String name, int hp, int mp) {
+        this.name = name;
+        this.hp = hp;
+        this.mp = mp;
+    }
+
+
+    //이름,hp 인스턴트화, mp는 최대 mp
+    public Cleric(String name, int hp) {
+        this(name, hp, MAX_MP);
+    }
+
+
+    //이름 인스턴트화, hp,mp는 최대
+    public Cleric(String name) {
+        this(name, MAX_HP, MAX_MP);
+    }
+
+
     void selfAid() {
         if (mp < SELF_AID_MP_COST) {
             System.out.println("MP가 부족합니다.");
