@@ -1,6 +1,9 @@
 package com.survivalcoding;
 
-public class Person_2 {
+import java.util.ArrayList;
+import java.util.List;
+
+class Person_2 {
 /*    연습문제 1
     다음 정보를 저장하기 좋은 컬렉션을 List, Set, Map 중 고르시오. 그 이유는?
     1) 대한민국의 도시 이름 모음 (순서 상관 없음)
@@ -17,5 +20,26 @@ public class Person_2 {
         정답 : Map
         이유 : 도시 이름(Key)과 인구수(Value)를 같이 저장해야하기 때문이다.*/
 
+    private final String name;
 
+    public Person_2(String name) {
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
+    }
+}
+
+class Person2 {
+    public static void main(String[] args) {
+        List<Person_2> personList = new ArrayList<>();
+
+        personList.add(new Person_2("홍길동"));
+        personList.add(new Person_2("한석봉"));
+
+        for (Person_2 person2 : personList) {
+            System.out.println(person2.getName());
+        }
+    }
 }
