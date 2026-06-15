@@ -1,7 +1,7 @@
 package com.survivalcoding;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashMap;
+import java.util.Map;
 
 class Person_2 {
 /*    연습문제 1
@@ -31,7 +31,7 @@ class Person_2 {
     }
 }
 
-class Person2 {
+/*class Person2 {
     public static void main(String[] args) {
         List<Person_2> personList = new ArrayList<>();
 
@@ -42,4 +42,21 @@ class Person2 {
             System.out.println(person2.getName());
         }
     }
+}*/
+
+class Person2 {
+    public static void main(String[] args) {
+        Map<String, Integer> ageMap = new HashMap<>();
+
+        ageMap.put("홍길동", 20);
+        ageMap.put("한석봉", 25);
+
+        for (Map.Entry<String, Integer> entry : ageMap.entrySet()) {
+            String name = entry.getKey();
+            Integer age = entry.getValue();
+            System.out.println(name + "의 나이는 " + age + "살");
+        }
+    }
 }
+
+
