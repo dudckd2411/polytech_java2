@@ -3,12 +3,21 @@ package com.survivalcoding;
 public class Computer extends TangibleAsset {
     private String makerName;
 
-    Computer(String name, int price, String color) {
-        super(name, price, color);
+    public Computer(String name, int price, String color, double weight, String makerName) {
+        super(name, price, color, weight);
         this.makerName = makerName;
     }
 
-    String getMakerName() {
+    public String getMakerName() {
         return makerName;
+    }
+
+    public void setMakerName() {
+        this.makerName = makerName;
+    }
+
+    @Override
+    public double weight() {
+        return 0;
     }
 }
