@@ -24,7 +24,7 @@ class Computer{
     - String makerName;
 }
 class Patent{
-    - string patentNumber;
+    - String patentNumber;
 }
 
 Thing <|.. TangibleAsset

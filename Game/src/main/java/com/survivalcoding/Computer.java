@@ -12,12 +12,12 @@ public class Computer extends TangibleAsset {
         return makerName;
     }
 
-    public void setMakerName() {
+    public void setMakerName(String makerName) {
         this.makerName = makerName;
     }
 
     @Override
     public double weight() {
-        return 0;
+        return weight();
     }
 }

@@ -13,12 +13,12 @@ public class Book extends TangibleAsset {
         return isbn;
     }
 
-    public void setIsbn() {
+    public void setIsbn(String isbn) {
         this.isbn = isbn;
     }
 
     @Override
     public double weight() {
-        return 0;
+        return weight();
     }
 }
